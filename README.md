@@ -14,7 +14,7 @@ npm install -g aws-auth
 Add a new AWS profile with interactive prompts for credentials and region:
 
 ```bash
-aws-auth add matematico
+aws-auth add production
 ```
 
 This will prompt you for:
@@ -26,11 +26,11 @@ This will prompt you for:
 Set a profile as the default AWS profile:
 
 ```bash
-aws-auth matematico
+aws-auth production
 # or
-aws-auth use matematico
+aws-auth use production
 # or  
-aws-auth set matematico
+aws-auth set production
 ```
 
 ### List all profiles
@@ -46,9 +46,9 @@ aws-auth ls
 Remove an AWS profile (with confirmation prompt):
 
 ```bash
-aws-auth remove matematico
+aws-auth remove production
 # or
-aws-auth rm matematico
+aws-auth rm production
 ```
 
 ### Help

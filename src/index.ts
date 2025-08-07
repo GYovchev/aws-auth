@@ -65,7 +65,7 @@ program
     }
   });
 
-// Handle case where profile name is passed as first argument (like "aws-auth matematico")
+// Handle case where profile name is passed as first argument (like "aws-auth production")
 program
   .argument('[profile]', 'profile name to use')
   .action(async (profile?: string) => {
