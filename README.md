@@ -111,6 +111,22 @@ To run in development mode:
 npm run dev
 ```
 
+## Publishing
+
+This package is automatically published to npm when a version tag is pushed to the repository. The GitHub Action workflow:
+
+1. Triggers on version tags (e.g., `v1.0.1`)
+2. Runs tests to ensure code quality
+3. Builds the TypeScript code
+4. Publishes to npm registry
+
+To publish a new version:
+
+```bash
+npm version patch  # or minor/major
+git push origin main --tags
+```
+
 ## License
 
 MIT

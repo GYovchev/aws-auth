@@ -6,6 +6,9 @@
   "bin": {
     "aws-auth": "dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
@@ -23,6 +26,14 @@
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GYovchev/aws-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GYovchev/aws-auth/issues"
+  },
+  "homepage": "https://github.com/GYovchev/aws-auth#readme",
   "dependencies": {
     "@types/node": "^24.2.0",
     "commander": "^14.0.0",
