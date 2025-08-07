@@ -1,0 +1,38 @@
+{
+  "name": "aws-auth",
+  "version": "1.0.0",
+  "description": "A CLI tool for managing AWS credentials and profiles",
+  "main": "dist/index.js",
+  "bin": {
+    "aws-auth": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "aws",
+    "credentials",
+    "cli",
+    "auth"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^24.2.0",
+    "commander": "^14.0.0",
+    "inquirer": "^12.9.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1",
+    "typescript": "^5.9.2"
+  }
+}
